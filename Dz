@@ -14,4 +14,4 @@ bash
    mv will_be_moved.txt app/
    git add app/will_be_moved.txt
    git commit -m "Перемещено и удалено"
-  git log
+   git log
