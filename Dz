@@ -1,0 +1,17 @@
+bash
+   mkdir my_repository
+   cd my_repository
+   git init
+   echo "l" > main.txt
+   git add main.txt
+   git commit -m "Мой первый коммит"
+   echo "I will be moved" > will_be_moved.txt
+   echo "I will be deleted" > will_be_deleted.txt
+   git add will_be_moved.txt will_be_deleted.txt
+   git commit -m "Скоро удалю и перемещу"
+   rm will_be_deleted.txt
+   mkdir app
+   mv will_be_moved.txt app/
+   git add app/will_be_moved.txt
+   git commit -m "Перемещено и удалено"
+  git log
